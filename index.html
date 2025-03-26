@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Discover Dream League Soccer 2025 (DLS 25), the ultimate soccer simulation game. Experience realistic gameplay, team customization, and immersive features.">
+  <meta name="keywords" content="DLS 25, Dream League Soccer 2025, soccer game, mobile soccer, sports game">
+  <meta name="author" content="Your Name">
+  <meta property="og:title" content="DLS 25 - Dream League Soccer 2025">
+  <meta property="og:description" content="The most realistic soccer simulation game with customizable teams and immersive gameplay.">
+  <meta property="og:image" content="https://example.com/dls25-banner.jpg">
+  <meta property="og:url" content="https://example.com/dls25">
+  <title>DLS 25 - Dream League Soccer 2025 | Ultimate Soccer Game</title>
+  <style>
+    /* General Reset */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      scroll-behavior: smooth; /* Enable smooth scrolling */
+    }
+
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    /* Header */
+    .header {
+      background: linear-gradient(135deg, #007bff, #00bcd4);
+      color: #fff;
+      text-align: center;
+      padding: 50px 0;
+    }
+
+    .header h1 {
+      font-size: 2rem;
+      margin-bottom: 4px;
+    }
+
+    .header p {
+      font-size: 1.5rem;
+    }
+
+    /* Table of Contents */
+    .toc {
+      background: #f9f9f9;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin: 30px 0;
+    }
+
+    .toc ul {
+      list-style: none;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+
+    .toc ul li a {
+      background: linear-gradient(135deg, #007bff, #00bcd4);
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      transition: transform 0.3s ease;
+    }
+
+    .toc ul li a:hover {
+      transform: scale(1.1);
+    }
+
+    /* Navbar */
+    .navbar {
+      background: #333;
+      color: #fff;
+    }
+
+    .navbar ul {
+      display: flex;
+      justify-content: center;
+      list-style: none;
+      padding: 10px 0;
+    }
+
+    .navbar ul li a {
+      color: #fff;
+      text-decoration: none;
+      padding: 10px 20px;
+      transition: background 0.3s ease;
+    }
+
+    .navbar ul li a:hover {
+      background: #007bff;
+      border-radius: 5px;
+    }
+
+    /* Stylish H2 Headings */
+    h2 {
+      position: relative;
+      font-size: 1.5rem;
+      font-weight: bold;
+      text-align: center;
+      color: #fff;
+      background: linear-gradient(135deg, #007bff, #00bcd4);
+      padding: 15px 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      margin: 30px 0;
+    }
+
+    /* Stylish H3 Headings */
+    h3 {
+      position: relative;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #007bff;
+      margin: 20px 0;
+      padding-bottom: 10px;
+    }
+
+    h3::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 50px;
+      height: 3px;
+      background: linear-gradient(90deg, #007bff, #00bcd4);
+      border-radius: 3px;
+    }
+
+    /* Features */
+    .features {
+      padding: 50px 0;
+      background: #f9f9f9;
+    }
+
+    .feature-list {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+    }
+
+    .feature-item {
+      background: #fff;
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      width: 30%;
+      margin-bottom: 20px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    /* About */
+    .about {
+      padding: 50px 0;
+      text-align: center;
+    }
+
+    /* Download */
+    .download {
+      padding: 50px 0;
+      text-align: center;
+      background: linear-gradient(135deg, #007bff, #00bcd4);
+      color: #fff;
+    }
+
+    .download .btn {
+      display: inline-block;
+      background: #fff;
+      color: #007bff;
+      padding: 10px 20px;
+      text-decoration: none;
+      border-radius: 5px;
+      margin: 10px;
+      transition: background 0.3s ease;
+      cursor: pointer;
+    }
+
+    .download .btn:hover {
+      background: #007bff;
+      color: #fff;
+    }
+
+    .download .btn.disabled {
+      background: #ccc;
+      color: #666;
+      cursor: not-allowed;
+    }
+
+    /* Footer */
+    .footer {
+      background: #333;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+
+    /* Back to Top Button */
+    .back-to-top {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: linear-gradient(135deg, #007bff, #00bcd4);
+      color: #fff;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      text-decoration: none;
+      font-size: 1.5rem;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      opacity: 0;
+      visibility: hidden;
+      transition: opacity 0.3s ease, visibility 0.3s ease;
+    }
+
+    .back-to-top.show {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .feature-item {
+        width: 100%;
+      }
+
+      .navbar ul {
+        flex-direction: column;
+      }
+
+      .navbar ul li a {
+        padding: 10px;
+        text-align: center;
+      }
+
+      .toc ul {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header Section -->
+  <header class="header">
+    <div class="container">
+      <h1>DLS 25 - Dream League Soccer 2025</h1>
+      <p>The Ultimate Soccer Simulation Game</p>
+    </div>
+  </header>
+
+  <!-- Table of Contents -->
+  <section class="toc">
+    <div class="container">
+      <ul>
+        <li><a href="#features">Key Features</a></li>
+        <li><a href="#about">About DLS 25</a></li>
+        <li><a href="#download">Download</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Features Section -->
+  <section id="features" class="features">
+    <div class="container">
+      <h2>Key Features of DLS 25</h2>
+      <div class="feature-list">
+        <div class="feature-item">
+          <h3>Realistic Gameplay</h3>
+          <p>Experience lifelike soccer matches with advanced 3D motion-captured animations.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Team Customization</h3>
+          <p>Create and personalize your dream team with unique kits, logos, and player transfers.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Immersive Commentary</h3>
+          <p>Enjoy live commentary that brings every match to life.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <div class="container">
+      <h2>About DLS 25</h2>
+      <p>Dream League Soccer 2025 is the latest installment in the popular mobile soccer series. With stunning graphics, customizable teams, and engaging gameplay, it's the perfect game for soccer enthusiasts and casual gamers alike.</p>
+    </div>
+  </section>
+
+  <!-- Download Section -->
+  <section id="download" class="download">
+    <div class="container">
+      <h2>Download DLS 25 Now!</h2>
+      <p>Available on iOS and Android platforms. Start your journey today!</p>
+      <div class="buttons">
+        <button class="btn" id="iosButton">Download for iOS</button>
+        <button class="btn" id="androidButton">Download for Android</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Dream League Soccer. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <a href="#" class="back-to-top" id="backToTopBtn">↑</a>
+
+  <!-- JavaScript -->
+  <script>
+    // Smooth Scrolling
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        const targetId = this.getAttribute('href').substring(1);
+        const targetElement = document.getElementById(targetId);
+        if (targetElement) {
+          targetElement.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    // Back to Top Button
+    const backToTopBtn = document.getElementById('backToTopBtn');
+    window.addEventListener('scroll', () => {
+      if (window.scrollY > 300) {
+        backToTopBtn.classList.add('show');
+      } else {
+        backToTopBtn.classList.remove('show');
+      }
+    });
+
+    backToTopBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    });
+
+    // Countdown Timer for Download Buttons
+    const iosButton = document.getElementById('iosButton');
+    const androidButton = document.getElementById('androidButton');
+
+    function startCountdown(button, url) {
+      let timeLeft = 20;
+      button.textContent = `Wait ${timeLeft}s`;
+      button.classList.add('disabled'); // Disable the button during countdown
+      button.style.pointerEvents = 'none'; // Prevent further clicks
+
+      const interval = setInterval(() => {
+        timeLeft--;
+        button.textContent = `Wait ${timeLeft}s`;
+
+        if (timeLeft <= 0) {
+          clearInterval(interval);
+          button.textContent = 'Redirecting...';
+          window.location.href = url; // Redirect to the specified URL
+        }
+      }, 1000);
+    }
+
+    iosButton.addEventListener('click', () => {
+      startCountdown(iosButton, 'https://apps.apple.com/sg/app/dream-league-soccer-2025/id1462911602'); // Replace with actual iOS download link
+    });
+
+    androidButton.addEventListener('click', () => {
+      startCountdown(androidButton, 'https://play.google.com/store/apps/details?id=com.firsttouchgames.dls7&hl=en_IN'); // Replace with actual Android download link
+    });
+  </script>
+</body>
+</html>
